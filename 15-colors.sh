@@ -34,9 +34,9 @@ else
 
 fi
 
-dnf list installed niginx
+dnf list installed nginx
 if [ $? -ne 0 ]; then
-    dnf install niginx -y
+    dnf install nginx -y
     VALIDATE $? "Nginx"
 
 else
